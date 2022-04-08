@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee Information</title>
+</head>
+<center>
+	<font color="black" size="5" style="font-family: avenir">
+
+		<h1 style="color: darkblur">EMPLOYEE INFORMATION</h1>
+
+		<body bgcolor="lightgrey">
+		
+		<li class="w3-padding-16">
+
+			<form action="/fetchdata" autocomplete="on" method="POST">
+			
+			<div>
+			
+			<table>
+			
+			<thead>
+			
+		    <tr>
+			
+			<th>Employee ID &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+			<th>First Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+			<th>Last Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<th>Primary Skill &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+			<th>Location &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+			<th>Job &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+			<th>Salary &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+			<th>Phone No &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			
+            </tr>
+			
+			</thead>
+			
+		<tbody>
+		
+		<tr>
+		
+		<td>{{ emp_id }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>{{ first_name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>{{ last_name }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        <td>{{ pri_skill }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>{{ location }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>{{ job }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>{{ salary }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<td>{{ phone_no }}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		
+		</tr>
+		</body>
+		
+		</table>
+		
+		</div></li>
+		</form>		
+		
+        <form action="/register" autocomplete="on" method="POST">
+				
+				<BR><BR><button type="submit"  style="background: black; height: 45px; width: 200px; color:white; font:oblique;">GO TO UPDATE DATABASE PAGE</button><br><br>
+				
+			</form>
+</center>
+</html>

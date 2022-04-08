@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+	<title>Add Employee Information</title>
+	
+	<style> 
+       body {
+              background-image: url("b2.png");
+              background-color: #cccccc;
+			  background-size: cover;
+			  background-repeat: no repeat;
+       }     
+	          
+	   
+</style>
+</head>
+<center>
+	<font color="black" size="4" style="font-family: avenir">
+
+		<h1 style="color: darkblue">EMPLOYEE DATABASE</h1>
+
+		<body bgcolor="lightgrey">
+		
+		     <form action="/login" autocomplete="on" method = "POST">
+
+				<button type="submit"  style="background: black; height: 45px; width: 200px; color:white; font:oblique;">Get Employee Information</button><br><br>
+				
+            </form>
+
+			<form action="/addemp" autocomplete="on" method = "POST" enctype="multipart/form-data">
+
+                				
+		  		Employee ID:<br> <input style="height:25px;font-size:14pt; color:grey;" type="number" name="emp_id" autofocus size="40" min="1" required><br><br>
+
+		  		First Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="first_name" required><br><br>
+
+		  		Last Name:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="last_name"required><br><br>
+
+		  		Primary Skills:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="pri_skill" required><br><br>
+
+		  		Location:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="location" required><br><br>
+				
+				Job:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="job" required><br><br>
+				
+				Salary:<br> <input style="height:25px;font-size:14pt;color:grey;" type="text" name="salary" required><br><br>
+				
+				Phone No:<br><input style="height:25px;font-size:14pt;color:grey;" type="text" name="phone_no" required><br><br>
+
+		  		Image: <input type=file name="emp_image_file" style="height:25px;font-size:14pt;color:grey;" required> <br><br>
+
+
+		  		<button type="submit" style="background: black; height: 45px; width: 200px; color: white; size: 5; font:oblique;">UPDATE DATABASE</button>
+               
+			</form>
+			<form action="/about" autocomplete="on" method = "POST">
+
+				<button type="submit"  style="background:black; height: 45px; width: 200px; color:white; font:oblique;">About Us</button><br><br>
+				
+            </form>
+		
+			
+
+		</body>
+
+	</font>
+</center>
+</html>
